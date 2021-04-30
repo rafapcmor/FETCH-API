@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH GIT</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #a8d0ec;">
+            <a class="navbar-brand font-weight-bold" href="#">
+                <img src="favicon.ico" width="50" height="50" alt=""> GITHUB
+            </a>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control" placeholder="Digite o nome do usuário" required type="text" id="usuario" name="usuario">
+                    <button class="btn btn-outline-primary mb-2" onClick="pegarDadosGitHub()">Pegar Dados</button>
+                </form>
+            </nav>
+
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="font-weight-bold">
+
+
+                <h1>Dados do Usuário:</h1>
+                <p>Login: </p>
+                <p id="login"></p>
+                <p>Foto: </p>
+                <p id="foto"></p>
+                <p>Quantidade de Seguidores:</p>
+                <p id="qtdFol"></p>
+                <p>Quantidade Seguindo:</p>
+                <p id="qtdSeg"></p>
+                <p>Repositórios Públicos:</p>
+                <p id="qtdRep"></p>
+            </section>
+            <section>
+                <h1>Seguidores:</h1>
+                <ul id="seguidores">
+
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        &copy; 2021. Todos os Direitos Reservados.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
